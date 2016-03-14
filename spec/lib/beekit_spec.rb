@@ -136,5 +136,24 @@ RSpec.describe Beekit do
         expect(client.unarchive_ticket(8379175)["code"]).to eq("204")
       end
     end
+
+    describe "#mark_ticket" do
+      xit "it should have a spam mark whem :spam argument is given"
+    end
+
+    describe "#assign_ticket" do
+      before do
+        VCR.insert_cassette 'assigned_ticket', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should assign the ticket to a user correctly" do
+        expect(client.assign_ticket(8379182, user_id: 2517806)["assignee"]["user"]["email"]).to eq("person4@example.com")
+      end
+    end
+
   end
 end

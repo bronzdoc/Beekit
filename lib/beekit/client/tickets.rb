@@ -54,5 +54,16 @@ module Beekit
       ticket = HTTParty.delete("#{base_uri}/tickets/#{ticket_id}/archive?auth_token=#{api_token}", { headers: headers } )
       { "code" => ticket.response.code, "message" => ticket.response.msg }
     end
+
+    def assign_ticket(ticket_id, user_data = { user_id: nil, group_id: nil })
+      post_data = {
+        "assignment": {
+          "user_id": user_data[:user_id],
+        }
+      }
+
+      ticket = HTTParty.post("#{base_uri}/tickets/#{ticket_id}/assignments?auth_token=#{api_token}", { body: post_data.to_json, headers: headers } )
+      JSON.parse(ticket.response.body)["assignment"]
+    end
   end
 end

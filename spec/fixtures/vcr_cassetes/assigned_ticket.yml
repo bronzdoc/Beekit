@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://company.supportbee.com/tickets/8379182/assignments?auth_token=api_token
+    body:
+      encoding: UTF-8
+      string: '{"assignment":{"user_id":2517806}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 18:20:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"676cfd53b1fe635a99d2eea680cc061d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlZDA3YTA3MDMwMTBkN2U2MTY4ZTVhZTFjNGM1MDk3YzQGOwBU--065f80a66a1ca35e366b7adee5d4a71384fbd681;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - d0d30270301b7ce838fd01411d5e9060
+      X-Runtime:
+      - '0.075909'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"assignment":{"id":4180917,"created_at":"2016-03-14T18:20:55Z","ticket":{"id":8379182},"assignee":{"user":{"id":2517806,"email":"person4@example.com","name":"luis
+        sagastume","agent":true,"picture":{"thumb20":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=128"}}}}}'
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 18:20:55 GMT
+recorded_with: VCR 3.0.1
