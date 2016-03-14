@@ -1,0 +1,277 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://company.supportbee.com/tickets?auth_token=api_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Sun, 13 Mar 2016 23:44:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"4803cf951911de30982f3242ffc37043"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTdkMjBlNmM2OGE0YzQyZjMwZjg1Zjk2ODdjNWEzMjYxBjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsISSIJVXNlcgY7AEZbBmkDLmsmSSIiJDJhJDEwJEJsNlFKajlTVGVFSC5mNVB0UkdWbi4GOwBU--b0b22d3e7d14c3295c7e864807a3d0e3e19a1e21;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 235f3029d2e2fa1c4575e88179209486
+      X-Runtime:
+      - '0.391351'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"total":5,"current_page":1,"per_page":15,"total_pages":1,"tickets":[{"id":8379182,"subject":"My
+        hands are hairy and blue!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:43:11Z","created_at":"2016-03-13T01:12:36Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"labels":[],"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2519570,"email":"beast_boy@gmail.com","name":"Henry
+        Philip McCoy","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=128"}}},{"id":8379175,"subject":"Got
+        a fork stuck in my head!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:41:39Z","created_at":"2016-03-13T01:11:09Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"labels":[],"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2519566,"email":"magneto_pro1965@gmail.com","name":"Erik
+        Lehnsherr","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=128"}}},{"id":8379169,"subject":"my
+        chair is broken!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:40:07Z","created_at":"2016-03-13T01:09:23Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"labels":[],"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2519563,"email":"charles_xavier@gmail.com","name":"charles
+        xavier","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=128"}}},{"id":8373428,"subject":"Getting
+        Started: Setting Up Email and Users","replies_count":0,"agent_replies_count":0,"comments_count":0,"last_activity_at":"2016-03-11T19:02:19Z","created_at":"2016-03-11T19:02:19Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"Hi
+        luiscompany, Welcome to SupportBee. You are just a few steps away from using
+        SupportBee to delive","draft":false,"source":{"web":"luiscompany-support@supportbeemail.com"},"labels":[{"name":"important","color":"#FF0000"}],"content":{"html":"<h3>
+        <b>Hi luiscompany,</b> </h3> <br> Welcome to SupportBee. You are just a few
+        steps away from using SupportBee to deliver great customer support! <br><br><div>
+        <b>Email Us Your First Ticket</b> <br> We have made it easy for you to try
+        out SupportBee without setting up anything. Send an email to <b><a href=\"mailto:luiscompany-support@supportbeemail.com\">luiscompany-support@supportbeemail.com</a></b>
+        and it will show up in your Unassigned Tickets in less than 60 seconds. You
+        can then reply to it to get a feel for SupportBee. <br><br><b>Forward Your
+        Company''s Support Emails</b> <br> Once you have seen SupportBee in action,
+        you can set it up to work with your company''s inbox. To forward emails from
+        your support or billing inbox, setup some <a href=\"/forwarding_addresses/new\">forwarding
+        addresses</a> . <br><br><b>Add Your Team to SupportBee</b> <br> Teams do better
+        support. SupportBee offers unlimited agents on every plan so you can collaborate
+        with your entire team. <a href=\"/users\">Invite your team to SupportBee</a>
+        . <br><br>\n</div> If you have any questions, please reply to this ticket
+        or write to us at support@supportbee.com anytime. <br><br><p> <b> Cheers,
+        <br> SupportBee Team </b> </p> ","text":"\n  \n    Hi luiscompany,\n  \n  \n\n  Welcome
+        to SupportBee. You are just a few steps away from using SupportBee to deliver
+        great customer support!\n  \n\n\n    Email Us Your First Ticket\n    \n\n    We
+        have made it easy for you to try out SupportBee without setting up anything.
+        Send an email to\n    luiscompany-support@supportbeemail.com (mailto:luiscompany-support@supportbeemail.com)\n    and
+        it will show up in your Unassigned Tickets in less than 60 seconds. You can
+        then reply to it to get a feel for SupportBee.\n    \n\nForward Your Company''s
+        Support Emails\n    \n\n    Once you have seen SupportBee in action, you can
+        set it up to work with your company''s inbox. To forward emails from your
+        support or billing inbox, setup some\n    forwarding addresses (/forwarding_addresses/new)\n    .\n    \n\nAdd
+        Your Team to SupportBee\n    \n\n    Teams do better support. SupportBee offers
+        unlimited agents on every plan so you can collaborate with your entire team.\n    Invite
+        your team to SupportBee (/users)\n    .\n    \n\n\n  If you have any questions,
+        please reply to this ticket or write to us at support@supportbee.com anytime.\n  \n\n\n    \n      Cheers,\n      \n\n      SupportBee
+        Team\n    \n  \n","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2517807,"email":"support@supportbee.com","name":"SupportBee","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=128"}}},{"id":8373427,"subject":"Sample
+        Ticket: How to use SupportBee","replies_count":0,"agent_replies_count":0,"comments_count":0,"last_activity_at":"2016-03-11T19:02:19Z","created_at":"2016-03-11T19:02:19Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"Hi
+        luiscompany, This is a sample ticket from us to help you understand the various
+        actions you can t","draft":false,"source":{"web":"luiscompany-support@supportbeemail.com"},"labels":[],"content":{"html":"<h3>
+        <b>Hi luiscompany,</b> </h3> <br> This is a sample ticket from us to help
+        you understand the various actions you can take on a ticket. <br><br><div>
+        <h3>Reply to the customer</h3> You can reply to a ticket and the ticket will
+        be moved to your answered screen. If the customer replies again, we''ll automatically
+        move the ticket to the unanswered section. <br><br><h3>Assign to an agent/group</h3>
+        If you cannot handle a ticket, you can assign it to someone else by clicking
+        on the ''Assign'' button. You can also assign the ticket to yourself and it
+        will show up in your ''My'' screen. <br><br><h3>Star to keep track</h3> If
+        you want to keep tabs on a ticket without participating in it, you can star
+        it. All your starred tickets will remain in ''My Tickets'' till you un-star
+        them. You can also star tickets that you have assigned to another agent /
+        group to keep a watch. <br><br><h3>Apply labels to categorize</h3> If you
+        need to categorize your tickets, you can do so by applying labels. To apply
+        labels, all you have to do is drag a label from the Label section and drop
+        in on the ticket. <br> Labels can only be created by an Admin from the ''Label
+        section'' in the Admin panel. <br><br><h3>Archive to close</h3> If the ticket
+        needs no further action, you can archive it. All your archived tickets can
+        be accessed from ''Archived'' screen. We also offer you reports on ''Average
+        Time to Archive'' so you can monitor your team''s performance. A new reply
+        from the customer will automatically unarchive a ticket and move it back to
+        the right screen. <br><br> We have extensive documentation available on our
+        <a href=\"https://supportbee.com/docs/\">Help Site</a> and you can always
+        write to us at support@supportbee.com if you have any questions! </div> <br><br><p>
+        <b> Cheers, <br> SupportBee </b> </p> ","text":"\n  \n    Hi luiscompany,\n  \n  \n\n  This
+        is a sample ticket from us to help you understand the various actions you
+        can take on a ticket.\n  \n\n\n    Reply to the customer\n    You can reply
+        to a ticket and the ticket will be moved to your answered screen. If the customer
+        replies again, we''ll automatically move the ticket to the unanswered section.\n    \n\nAssign
+        to an agent/group\n    If you cannot handle a ticket, you can assign it to
+        someone else by clicking on the ''Assign'' button. You can also assign the
+        ticket to yourself and it will show up in your ''My'' screen.\n    \n\nStar
+        to keep track\n    If you want to keep tabs on a ticket without participating
+        in it, you can star it. All your starred tickets will remain in ''My Tickets''
+        till you un-star them. You can also star tickets that you have assigned to
+        another agent / group to keep a watch.\n    \n\nApply labels to categorize\n    If
+        you need to categorize your tickets, you can do so by applying labels. To
+        apply labels, all you have to do is drag a label from the Label section and
+        drop in on the ticket.\n    \n\n    Labels can only be created by an Admin
+        from the ''Label section'' in the Admin panel.\n    \n\nArchive to close\n    If
+        the ticket needs no further action, you can archive it. All your archived
+        tickets can be accessed from ''Archived'' screen. We also offer you reports
+        on ''Average Time to Archive'' so you can monitor your team''s performance.
+        A new reply from the customer will automatically unarchive a ticket and move
+        it back to the right screen.\n    \n\n\n    We have extensive documentation
+        available on our Help Site (https://supportbee.com/docs/) and you can always
+        write to us at support@supportbee.com if you have any questions!\n  \n  \n\n\n    \n      Cheers,\n      \n\n      SupportBee\n    \n  \n","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2517807,"email":"support@supportbee.com","name":"SupportBee","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=128"}}}]}'
+    http_version:
+  recorded_at: Sun, 13 Mar 2016 23:44:15 GMT
+- request:
+    method: get
+    uri: https://luiscompany.supportbee.com/tickets?auth_token=neSpxZiGTmy3yRsz2tQs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Sun, 13 Mar 2016 23:46:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"4803cf951911de30982f3242ffc37043"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWRmYzZjNmFiMzBkYjYwOTBiYzkxNTU4MDJiNDg0ZjY3BjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsISSIJVXNlcgY7AEZbBmkDLmsmSSIiJDJhJDEwJEJsNlFKajlTVGVFSC5mNVB0UkdWbi4GOwBU--1c1dfa1aae2ab79709677596889e73abbb594634;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 9e3bbebdf977bf5c8b17b688f1bbff55
+      X-Runtime:
+      - '0.320921'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"total":5,"current_page":1,"per_page":15,"total_pages":1,"tickets":[{"id":8379182,"subject":"My
+        hands are hairy and blue!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:43:11Z","created_at":"2016-03-13T01:12:36Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"labels":[],"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2519570,"email":"beast_boy@gmail.com","name":"Henry
+        Philip McCoy","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/c8cf5d7d8de35d9932e709df39e6470e.png?r=PG&s=128"}}},{"id":8379175,"subject":"Got
+        a fork stuck in my head!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:41:39Z","created_at":"2016-03-13T01:11:09Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"labels":[],"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2519566,"email":"magneto_pro1965@gmail.com","name":"Erik
+        Lehnsherr","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=128"}}},{"id":8379169,"subject":"my
+        chair is broken!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:40:07Z","created_at":"2016-03-13T01:09:23Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"labels":[],"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2519563,"email":"charles_xavier@gmail.com","name":"charles
+        xavier","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/d5e26b893b4764d82014c4f3bcc68b5f.png?r=PG&s=128"}}},{"id":8373428,"subject":"Getting
+        Started: Setting Up Email and Users","replies_count":0,"agent_replies_count":0,"comments_count":0,"last_activity_at":"2016-03-11T19:02:19Z","created_at":"2016-03-11T19:02:19Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"Hi
+        luiscompany, Welcome to SupportBee. You are just a few steps away from using
+        SupportBee to delive","draft":false,"source":{"web":"luiscompany-support@supportbeemail.com"},"labels":[{"name":"important","color":"#FF0000"}],"content":{"html":"<h3>
+        <b>Hi luiscompany,</b> </h3> <br> Welcome to SupportBee. You are just a few
+        steps away from using SupportBee to deliver great customer support! <br><br><div>
+        <b>Email Us Your First Ticket</b> <br> We have made it easy for you to try
+        out SupportBee without setting up anything. Send an email to <b><a href=\"mailto:luiscompany-support@supportbeemail.com\">luiscompany-support@supportbeemail.com</a></b>
+        and it will show up in your Unassigned Tickets in less than 60 seconds. You
+        can then reply to it to get a feel for SupportBee. <br><br><b>Forward Your
+        Company''s Support Emails</b> <br> Once you have seen SupportBee in action,
+        you can set it up to work with your company''s inbox. To forward emails from
+        your support or billing inbox, setup some <a href=\"/forwarding_addresses/new\">forwarding
+        addresses</a> . <br><br><b>Add Your Team to SupportBee</b> <br> Teams do better
+        support. SupportBee offers unlimited agents on every plan so you can collaborate
+        with your entire team. <a href=\"/users\">Invite your team to SupportBee</a>
+        . <br><br>\n</div> If you have any questions, please reply to this ticket
+        or write to us at support@supportbee.com anytime. <br><br><p> <b> Cheers,
+        <br> SupportBee Team </b> </p> ","text":"\n  \n    Hi luiscompany,\n  \n  \n\n  Welcome
+        to SupportBee. You are just a few steps away from using SupportBee to deliver
+        great customer support!\n  \n\n\n    Email Us Your First Ticket\n    \n\n    We
+        have made it easy for you to try out SupportBee without setting up anything.
+        Send an email to\n    luiscompany-support@supportbeemail.com (mailto:luiscompany-support@supportbeemail.com)\n    and
+        it will show up in your Unassigned Tickets in less than 60 seconds. You can
+        then reply to it to get a feel for SupportBee.\n    \n\nForward Your Company''s
+        Support Emails\n    \n\n    Once you have seen SupportBee in action, you can
+        set it up to work with your company''s inbox. To forward emails from your
+        support or billing inbox, setup some\n    forwarding addresses (/forwarding_addresses/new)\n    .\n    \n\nAdd
+        Your Team to SupportBee\n    \n\n    Teams do better support. SupportBee offers
+        unlimited agents on every plan so you can collaborate with your entire team.\n    Invite
+        your team to SupportBee (/users)\n    .\n    \n\n\n  If you have any questions,
+        please reply to this ticket or write to us at support@supportbee.com anytime.\n  \n\n\n    \n      Cheers,\n      \n\n      SupportBee
+        Team\n    \n  \n","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2517807,"email":"support@supportbee.com","name":"SupportBee","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=128"}}},{"id":8373427,"subject":"Sample
+        Ticket: How to use SupportBee","replies_count":0,"agent_replies_count":0,"comments_count":0,"last_activity_at":"2016-03-11T19:02:19Z","created_at":"2016-03-11T19:02:19Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"Hi
+        luiscompany, This is a sample ticket from us to help you understand the various
+        actions you can t","draft":false,"source":{"web":"luiscompany-support@supportbeemail.com"},"labels":[],"content":{"html":"<h3>
+        <b>Hi luiscompany,</b> </h3> <br> This is a sample ticket from us to help
+        you understand the various actions you can take on a ticket. <br><br><div>
+        <h3>Reply to the customer</h3> You can reply to a ticket and the ticket will
+        be moved to your answered screen. If the customer replies again, we''ll automatically
+        move the ticket to the unanswered section. <br><br><h3>Assign to an agent/group</h3>
+        If you cannot handle a ticket, you can assign it to someone else by clicking
+        on the ''Assign'' button. You can also assign the ticket to yourself and it
+        will show up in your ''My'' screen. <br><br><h3>Star to keep track</h3> If
+        you want to keep tabs on a ticket without participating in it, you can star
+        it. All your starred tickets will remain in ''My Tickets'' till you un-star
+        them. You can also star tickets that you have assigned to another agent /
+        group to keep a watch. <br><br><h3>Apply labels to categorize</h3> If you
+        need to categorize your tickets, you can do so by applying labels. To apply
+        labels, all you have to do is drag a label from the Label section and drop
+        in on the ticket. <br> Labels can only be created by an Admin from the ''Label
+        section'' in the Admin panel. <br><br><h3>Archive to close</h3> If the ticket
+        needs no further action, you can archive it. All your archived tickets can
+        be accessed from ''Archived'' screen. We also offer you reports on ''Average
+        Time to Archive'' so you can monitor your team''s performance. A new reply
+        from the customer will automatically unarchive a ticket and move it back to
+        the right screen. <br><br> We have extensive documentation available on our
+        <a href=\"https://supportbee.com/docs/\">Help Site</a> and you can always
+        write to us at support@supportbee.com if you have any questions! </div> <br><br><p>
+        <b> Cheers, <br> SupportBee </b> </p> ","text":"\n  \n    Hi luiscompany,\n  \n  \n\n  This
+        is a sample ticket from us to help you understand the various actions you
+        can take on a ticket.\n  \n\n\n    Reply to the customer\n    You can reply
+        to a ticket and the ticket will be moved to your answered screen. If the customer
+        replies again, we''ll automatically move the ticket to the unanswered section.\n    \n\nAssign
+        to an agent/group\n    If you cannot handle a ticket, you can assign it to
+        someone else by clicking on the ''Assign'' button. You can also assign the
+        ticket to yourself and it will show up in your ''My'' screen.\n    \n\nStar
+        to keep track\n    If you want to keep tabs on a ticket without participating
+        in it, you can star it. All your starred tickets will remain in ''My Tickets''
+        till you un-star them. You can also star tickets that you have assigned to
+        another agent / group to keep a watch.\n    \n\nApply labels to categorize\n    If
+        you need to categorize your tickets, you can do so by applying labels. To
+        apply labels, all you have to do is drag a label from the Label section and
+        drop in on the ticket.\n    \n\n    Labels can only be created by an Admin
+        from the ''Label section'' in the Admin panel.\n    \n\nArchive to close\n    If
+        the ticket needs no further action, you can archive it. All your archived
+        tickets can be accessed from ''Archived'' screen. We also offer you reports
+        on ''Average Time to Archive'' so you can monitor your team''s performance.
+        A new reply from the customer will automatically unarchive a ticket and move
+        it back to the right screen.\n    \n\n\n    We have extensive documentation
+        available on our Help Site (https://supportbee.com/docs/) and you can always
+        write to us at support@supportbee.com if you have any questions!\n  \n  \n\n\n    \n      Cheers,\n      \n\n      SupportBee\n    \n  \n","truncated":false,"attachments":[]},"starred":false,"cc":[],"requester":{"id":2517807,"email":"support@supportbee.com","name":"SupportBee","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/908906ceeb8cedb49e6cea40efbd9649.png?r=PG&s=128"}}}]}'
+    http_version:
+  recorded_at: Sun, 13 Mar 2016 23:46:27 GMT
+recorded_with: VCR 3.0.1

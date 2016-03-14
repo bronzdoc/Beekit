@@ -15,5 +15,23 @@ RSpec.describe Beekit do
         expect(client.company).to eq("company")
       end
     end
+
+    describe "#tickets" do
+      before do
+        VCR.insert_cassette 'tickets', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should return a hash" do
+        expect(client.tickets.class).to eq(Array)
+      end
+
+      it "should return 5 tickets" do
+        expect(client.tickets.count).to eq(5)
+      end
+    end
   end
 end
