@@ -177,6 +177,17 @@ RSpec.describe Beekit do
           expect(res["message"]).to eq("No Content")
         end
       end
+
+      describe "#spam_ticket" do
+        after { VCR.eject_cassette }
+
+        it "should mark as spam the specified ticket" do
+          VCR.insert_cassette 'spam_ticket', :record => :new_episodes
+          res = client.spam_ticket(8379182)
+          expect(res["code"]).to eq("204")
+          expect(res["message"]).to eq("No Content")
+        end
+      end
     end
   end
 end

@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://company.supportbee.com/tickets/8379182/spam?auth_token=api_token
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 21:28:47 GMT
+      Connection:
+      - keep-alive
+      Status:
+      - 204 No Content
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlMzQyMDlhNzg0NzhiYWNkZjE2NTJmZGI2NjhjYTI4NDYGOwBU--505e8b6459a092c8c2b17acddfe1c21af1c8cd10;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 97d8a8f7dbefb6c5a43081a9035ff756
+      X-Runtime:
+      - '0.418027'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 21:28:47 GMT
+recorded_with: VCR 3.0.1
