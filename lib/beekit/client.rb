@@ -12,5 +12,10 @@ module Beekit
       @base_uri  = "https://#{@company}.supportbee.com"
       @headers   = {"Content-type" => "application/json", "Accept" => "application/json"}
     end
+
+    def company=(company)
+      @base_uri = "https://#{company}.supportbee.com"
+      @company  = company
+    end
   end
 end
