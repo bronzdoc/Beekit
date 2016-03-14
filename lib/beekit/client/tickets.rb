@@ -86,5 +86,10 @@ module Beekit
       ticket = HTTParty.delete("#{base_uri}/tickets/#{ticket_id}/spam?auth_token=#{api_token}", { headers: headers } )
       { "code" => ticket.response.code, "message" => ticket.response.msg }
     end
+
+    def trash_ticket(ticket_id)
+      ticket = HTTParty.post("#{base_uri}/tickets/#{ticket_id}/trash?auth_token=#{api_token}", { headers: headers } )
+      { "code" => ticket.response.code, "message" => ticket.response.msg }
+    end
   end
 end
