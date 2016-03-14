@@ -4,6 +4,7 @@ module Beekit
 
     def initialize(company, api_token)
       @api_token = api_token
+      @company = company
     end
   end
 end
