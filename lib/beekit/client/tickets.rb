@@ -96,5 +96,12 @@ module Beekit
       ticket = HTTParty.delete("#{base_uri}/tickets/#{ticket_id}/trash?auth_token=#{api_token}", { headers: headers } )
       { "code" => ticket.response.code, "message" => ticket.response.msg }
     end
+
+    def ticket_replies(ticket_id)
+      ticket = HTTParty.get("#{base_uri}/tickets/#{ticket_id}/replies", query: { auth_token: api_token },  headers: headers)
+      require "pry"
+      binding.pry
+      JSON.parse(ticket.response.body)
+    end
   end
 end

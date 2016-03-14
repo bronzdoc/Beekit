@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://company.supportbee.com/tickets/8379182/replies?auth_token=api_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 22:12:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"50f74fd29fe4c12cc24686334269a91b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTYxMjhmYzE2ZTViYzg4ZGIwMzc4ZDllOTQ3OGQ2YTUyBjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsISSIJVXNlcgY7AEZbBmkDLmsmSSIiJDJhJDEwJEJsNlFKajlTVGVFSC5mNVB0UkdWbi4GOwBU--285d2948e02ff538f78b94c24d78c53e54f3e994;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 95abdeb71f1b6eaecd0b13f35d1373de
+      X-Runtime:
+      - '0.030992'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"replies":[
+          {
+      "id":1,
+      "created_at":"2012-01-20T03:45:51Z",
+      "summary":"Reply Content",
+      "cc":[],
+      "ticket":{
+        "replies_count":2,
+        "comments_count":0
+      },
+      "replier":{
+        "id":1,
+        "email":"person2@example.com",
+        "name":"Agent,1",
+        "agent":true,
+        "picture":{
+          "thumb20":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=20",
+          "thumb24":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=24",
+          "thumb32":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=32",
+          "thumb48":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=48",
+          "thumb64":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=64",
+          "thumb128":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=128"
+        }
+      },
+      "content":{
+        "body":"Reply Content",
+        "html":null,
+        "attachments":[]
+      }
+    }
+    ]}'
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 22:12:21 GMT
+recorded_with: VCR 3.0.1

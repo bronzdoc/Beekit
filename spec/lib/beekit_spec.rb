@@ -198,7 +198,7 @@ RSpec.describe Beekit do
         end
       end
 
-      describe "trash_ticket" do
+      describe "#trash_ticket" do
         it "should trash the specified ticket" do
           VCR.insert_cassette 'trash_ticket', :record => :new_episodes
           res = client.trash_ticket(8379182)
@@ -207,12 +207,19 @@ RSpec.describe Beekit do
         end
       end
 
-      describe "untrash_ticket" do
+      describe "#untrash_ticket" do
         it "should trash the specified ticket" do
           VCR.insert_cassette 'untrash_ticket', :record => :new_episodes
           res = client.untrash_ticket(8379182)
           expect(res["code"]).to eq("204")
           expect(res["message"]).to eq("No Content")
+        end
+      end
+
+      describe "#ticket_replies" do
+        it "should get back ticket replies" do
+          VCR.insert_cassette 'ticket_replies', :record => :new_episodes
+          expect(client.ticket_replies(8379182)["replies"].count).to eq(1)
         end
       end
     end
