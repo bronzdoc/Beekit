@@ -70,5 +70,25 @@ RSpec.describe Beekit do
         end
       end
     end
+
+    describe "#create_ticket" do
+      before do
+        VCR.insert_cassette 'create_ticket', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should create new ticket" do
+        options = {
+          subject: "Computer problem!",
+          requester_name: "Francisco",
+          requester_email: "panchito@gmail.com"
+        }
+        new_ticket = client.create_ticket("My computer is not working, please help me!", options)
+        expect(new_ticket["requester"]["email"]).to eq("panchito@gmail.com")
+      end
+    end
   end
 end

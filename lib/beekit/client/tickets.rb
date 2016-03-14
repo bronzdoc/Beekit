@@ -16,5 +16,28 @@ module Beekit
       search = HTTParty.get("#{base_uri}/tickets/search", query: options,  headers: headers)
       JSON.parse(search.response.body)["tickets"]
     end
+
+    def create_ticket(content, user_data = {
+      subject: "No Subject",
+      requester_name: nil,
+      requester_email: nil,
+      cc: []
+    })
+      post_data = {
+        "ticket": {
+          "subject": user_data[:subject],
+          "requester_name": user_data[:requester_name],
+          "requester_email": user_data[:requester_email],
+          "cc": user_data[:cc],
+          "content":{
+            "text": content,
+            "html": content
+          }
+        }
+      }
+
+      ticket = HTTParty.post("#{base_uri}/tickets?auth_token=#{api_token}", { body: post_data.to_json, headers: headers } )
+      JSON.parse(ticket.response.body)["ticket"]
+    end
   end
 end
