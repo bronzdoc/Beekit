@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://company.supportbee.com/tickets/8379175?auth_token=api_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 05:53:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"06c3d1c99b395bb3ed49e6decbd0d387"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk2OWQ0NGRiN2VmNjMxY2FlNDY4M2ZmNDhmMjQyNTlhBjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsISSIJVXNlcgY7AEZbBmkDLmsmSSIiJDJhJDEwJEJsNlFKajlTVGVFSC5mNVB0UkdWbi4GOwBU--3b73063e4be31acb574c38ce2fbba4e95966de56;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - c96a2155fdf7ca539ff29d824ad62db2
+      X-Runtime:
+      - '0.052467'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"ticket":{"id":8379175,"subject":"Got a fork stuck in my head!","replies_count":0,"agent_replies_count":0,"comments_count":1,"last_activity_at":"2016-03-13T01:41:39Z","created_at":"2016-03-13T01:11:09Z","unanswered":true,"archived":false,"private":false,"spam":false,"trash":false,"summary":"empty)","draft":false,"source":{"web":"lsagastume1990@gmail.com"},"cc":[],"labels":[],"requester":{"id":2519566,"email":"magneto_pro1965@gmail.com","name":"Erik
+        Lehnsherr","agent":false,"picture":{"thumb20":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/b508ef62c28dd84686549476b2abfaca.png?r=PG&s=128"}},"content":{"html":"(empty)","text":"(empty)","truncated":false,"attachments":[]},"starred":false}}'
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 05:53:39 GMT
+recorded_with: VCR 3.0.1

@@ -90,5 +90,19 @@ RSpec.describe Beekit do
         expect(new_ticket["requester"]["email"]).to eq("panchito@gmail.com")
       end
     end
+
+    describe "#ticket" do
+      before do
+        VCR.insert_cassette 'ticket', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should get the ticket specified by the ticket_id argument" do
+        expect(client.ticket(8379175)["requester"]["name"]).to eq("Erik Lehnsherr")
+      end
+    end
   end
 end
