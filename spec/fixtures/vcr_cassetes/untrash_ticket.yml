@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://company.supportbee.com/tickets/8379182/trash?auth_token=api_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 21:53:40 GMT
+      Connection:
+      - keep-alive
+      Status:
+      - 204 No Content
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlYWE2MDNjMmFlZGE4M2VhMTk2ZGNhZmUyYmU1MzdhMjEGOwBU--acae32181b1c287432613668b3f20f92de1de508;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 6bd0114ddf3b7e4a6e9d02dc69ee4af1
+      X-Runtime:
+      - '0.086646'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 21:53:40 GMT
+recorded_with: VCR 3.0.1
