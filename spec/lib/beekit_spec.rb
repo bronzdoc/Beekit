@@ -167,6 +167,16 @@ RSpec.describe Beekit do
         expect(res["message"]).to eq("Created")
       end
 
+      describe "#unstar_ticket" do
+        after { VCR.eject_cassette }
+
+        it "should unstar the specified ticket" do
+          VCR.insert_cassette 'unstar_ticket', :record => :new_episodes
+          res = client.unstar_ticket(8379175)
+          expect(res["code"]).to eq("204")
+          expect(res["message"]).to eq("No Content")
+        end
+      end
     end
   end
 end
