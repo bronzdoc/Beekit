@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://company.supportbee.com/tickets/8379175/archive?auth_token=api_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 17:30:49 GMT
+      Connection:
+      - keep-alive
+      Status:
+      - 204 No Content
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlYzgzMWU1MGJjNDU1MDNiNTg4Mzg5MzllMGY2OWZiNjMGOwBU--32d71d26daddd0d7b18996b0a5cdb2a4d3461671;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 9044ada8f6f6d5f8cd9bae1665b22647
+      X-Runtime:
+      - '0.064228'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 17:30:49 GMT
+recorded_with: VCR 3.0.1

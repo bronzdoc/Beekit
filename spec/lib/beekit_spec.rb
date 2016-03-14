@@ -122,5 +122,19 @@ RSpec.describe Beekit do
         expect(client.archive_ticket(8379175)["code"]).to eq("204")
       end
     end
+
+    describe "#unarchive_ticket" do
+      before do
+        VCR.insert_cassette 'unarchived_ticket', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should return a 204 code when the ticket is unarchived successfully" do
+        expect(client.unarchive_ticket(8379175)["code"]).to eq("204")
+      end
+    end
   end
 end
