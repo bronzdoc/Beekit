@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://company.supportbee.com/tickets/8379182/assignments?auth_token=api_token
+    body:
+      encoding: UTF-8
+      string: '{"assignment":{"user_id":null,"group_id":5470}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 19:32:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"9236ac5fcf8ce76c3820106336e009f1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlOGM1OTdjNTQyNjdhN2IzZWI2OTgwNGMxZTNlOTdlZmIGOwBU--f89866249ab5c08ea69f2da89a32aaee3979f300;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 1c255d31f6ff02b4039ff2fb8e350257
+      X-Runtime:
+      - '0.227275'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"assignment":{"id":4181394,"created_at":"2016-03-14T19:32:41Z","ticket":{"id":8379182},"assignee":{"group":{"id":5470,"name":"x-men","private":false,"picture":{"thumb20":"/images/groups/speech-balloon-orange-x20.png","thumb24":"/images/groups/speech-balloon-orange-x24.png","thumb32":"/images/groups/speech-balloon-orange-x32.png","thumb48":"/images/groups/speech-balloon-orange-x48.png","thumb256":"/images/groups/speech-balloon-orange-x256.png"}}}}}'
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 19:32:41 GMT
+- request:
+    method: post
+    uri: https://company.supportbee.com/tickets/8379182/assignments?auth_token=api_token
+    body:
+      encoding: UTF-8
+      string: '{"assignment":{"user_id":null,"group_id":5470}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 19:35:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiCmZsYXNoBjoGRUZvOiVBY3Rpb25EaXNwYXRjaDo6Rmxhc2g6OkZsYXNoSGFzaAk6CkB1c2VkbzoIU2V0BjoKQGhhc2h7BjoKYWxlcnRUOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjsKSSIBi1NvcnJ5LiBTb21ldGhpbmcgc2VlbXMgdG8gaGF2ZSBnb25lIHdyb25nLiBQbGVhc2UgdHJ5IGFnYWluIGFmdGVyIHNvbWUgdGltZS4gSWYgdGhlIHByb2JsZW0gcGVyc2lzdHMsIHdyaXRlIHRvIHVzIGF0IHN1cHBvcnRAc3VwcG9ydGJlZS5jb20GOwBGOglAbm93bzokQWN0aW9uRGlzcGF0Y2g6OkZsYXNoOjpGbGFzaE5vdwY6C0BmbGFzaEAHSSIPc2Vzc2lvbl9pZAY7AEZJIiUyNjQzOGNjZjExZTNjNWI2MWQ5NDIzYWE1ODFmZTQ4ZgY7AFQ%3D--ed495c5289902eff072ffb9aab6d9a5ce4b6f33c;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 356a48c5d9281e16ba0a69b8d9bbc207
+      X-Runtime:
+      - '0.020525'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"error":"Sorry. Something seems to have gone wrong. Please recheck
+        your api request or try again after some time. If the problem persists, write
+        to us at support@supportbee.com"}'
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 19:35:35 GMT
+recorded_with: VCR 3.0.1

@@ -142,18 +142,19 @@ RSpec.describe Beekit do
     end
 
     describe "#assign_ticket" do
-      before do
-        VCR.insert_cassette 'assigned_ticket', :record => :new_episodes
-      end
-
       after do
         VCR.eject_cassette
       end
 
       it "should assign the ticket to a user correctly" do
+        VCR.insert_cassette 'ticket_user_assign', :record => :new_episodes
         expect(client.assign_ticket(8379182, user_id: 2517806)["assignee"]["user"]["email"]).to eq("person4@example.com")
       end
-    end
 
+      it "should assign the ticket to a group correctly" do
+        VCR.insert_cassette 'ticket_group_assign', :record => :new_episodes
+        expect(client.assign_ticket(8379182, group_id: 5470)["assignee"]["group"]["name"]).to eq("x-men")
+      end
+    end
   end
 end

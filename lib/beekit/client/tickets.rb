@@ -59,6 +59,7 @@ module Beekit
       post_data = {
         "assignment": {
           "user_id": user_data[:user_id],
+          "group_id": user_data[:group_id]
         }
       }
 
