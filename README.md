@@ -1,38 +1,91 @@
 # Beekit
+API wrapper for SupportBee
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/beekit`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Installation(this is a demo gem)
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'beekit'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install beekit
+$ git clone https://github.com/bronzdoc/Beekit.git
+$ cd Beekit
+$ gem build beekit.gemspec
+$ gem install beekit.gem
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+client = Beekit::Client.new("company", "API_TOKEN")
 
-## Development
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+# Fetching tickets
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+# Return 15 tickets of the company in the order of their last activity
+client.tickets
+
+# Pass an options hash for specific tickets
+client.tickets({label: "important", per_page: 10})
+
+# Get a single ticket
+client.ticket(ticket_id)
+```
+
+# Creating tickets
+
+```ruby
+client.create_ticket("ticket content", {
+    subject: "Subject",
+    requester_name: "Charles xavier",
+    requester_email: "charles@gmail.com",
+    cc: ["hank_maccoy@gmail.com"],
+})
+
+```
+
+# Deleting tickets
+
+```ruby
+client.delete_ticket!(ticket_id)
+```
+
+# Actions on Tickets
+
+```ruby
+# Archives an unarchived ticket
+client.archive_ticket(ticket_id)
+
+# Un-archives an archived ticket
+client.unarchive_ticket(ticket_id)
+
+# Marks the ticket with a label
+client.mark_ticket(ticket_id, :label)
+
+# Assign a ticket to a user/group
+client.assign_ticket(ticket_id, user_id)
+client.assign_ticket(ticket_id, group_id)
+
+# Star a ticket
+client.star_ticket(ticket_id)
+
+# Un-Star tickets
+client.unstar_ticket(ticket_id)
+
+# Trash ticket
+client.trash_ticket(ticket_id)
+
+# Un-Trash ticket
+client.untrash_ticket(ticket_id)
+
+# Fetching ticket replies
+client.ticket_replies(ticket_id)
+
+# Reply to a ticket
+client.ticket_reply(ticket_id, "reply content")
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/beekit.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[bronzdoc]/beekit.
 
 
 ## License
