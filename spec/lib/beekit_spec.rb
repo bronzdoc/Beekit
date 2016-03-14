@@ -104,5 +104,23 @@ RSpec.describe Beekit do
         expect(client.ticket(8379175)["requester"]["name"]).to eq("Erik Lehnsherr")
       end
     end
+
+    describe "#delete_ticket!" do
+      xit "should delete a trashed ticket"
+    end
+
+    describe "#archive_ticket" do
+      before do
+        VCR.insert_cassette 'archived_ticket', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should return a 204 code when the ticket is archived successfully" do
+        expect(client.archive_ticket(8379175)["code"]).to eq("204")
+      end
+    end
   end
 end
