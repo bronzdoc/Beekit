@@ -46,7 +46,7 @@ RSpec.describe Beekit do
       end
     end
 
-    describe "#search_ticket" do
+    describe "#search_tickets" do
       before do
         VCR.insert_cassette 'search_ticket', :record => :new_episodes
       end
@@ -55,8 +55,19 @@ RSpec.describe Beekit do
         VCR.eject_cassette
       end
 
-      xit "should return the ticket specified by the ticket_id argument" do
-        client.search_ticket("Henry")
+      it "returns tickets matching the search query" do
+        expect(client.search_tickets("Henry").class).to eq(Array)
+      end
+
+      context "when query Henry" do
+        it "should return just 1 record" do
+          expect(client.search_tickets("Henry").count).to eq(1)
+        end
+
+        it "should have email equal to beast_boy@gmail.com" do
+          tickets = client.search_tickets("Henry")
+          expect(tickets.first["requester"]["email"]).to eq("beast_boy@gmail.com")
+        end
       end
     end
   end
