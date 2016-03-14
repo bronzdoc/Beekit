@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://company.supportbee.com/tickets/8379175/star?auth_token=api_token
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Mon, 14 Mar 2016 20:40:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      Location:
+      - https://luiscompany.supportbee.com/tickets/8379175/star.69009
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"a391d34ed4af38e6e6e8d5d3a00bee6b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlNTI1ODQ5NTg2ZmRkZjJjYTI0MDg3ZGYzYjMxYjQ4NDAGOwBU--df380090464920fbecd9a141ef7693186c6679b1;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 95ea718cddd2d5f134b685a9914297c0
+      X-Runtime:
+      - '0.296055'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"star":{"created_at":"2016-03-14T20:40:59Z","id":69009,"ticket_id":8379175,"updated_at":"2016-03-14T20:40:59Z","user_id":2517806}}'
+    http_version:
+  recorded_at: Mon, 14 Mar 2016 20:40:59 GMT
+recorded_with: VCR 3.0.1

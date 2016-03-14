@@ -156,5 +156,17 @@ RSpec.describe Beekit do
         expect(client.assign_ticket(8379182, group_id: 5470)["assignee"]["group"]["name"]).to eq("x-men")
       end
     end
+
+    describe "star_ticket" do
+      after { VCR.eject_cassette }
+
+      it "should star the specified ticket" do
+        VCR.insert_cassette 'star_ticket', :record => :new_episodes
+        res = client.star_ticket(8379175)
+        expect(res["code"]).to eq("201")
+        expect(res["message"]).to eq("Created")
+      end
+
+    end
   end
 end
