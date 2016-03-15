@@ -45,6 +45,11 @@ module Beekit
       JSON.parse(ticket.response.body)["ticket"]
     end
 
+    def delete_trashed_ticket!(ticket_id)
+      ticket = HTTParty.delete("#{base_uri}/tickets/#{ticket_id}?auth_token=#{api_token}", { headers: headers } )
+      { "code" => ticket.response.code, "message" => ticket.response.msg }
+    end
+
     def archive_ticket(ticket_id)
       ticket = HTTParty.post("#{base_uri}/tickets/#{ticket_id}/archive?auth_token=#{api_token}", { headers: headers } )
       { "code" => ticket.response.code, "message" => ticket.response.msg }

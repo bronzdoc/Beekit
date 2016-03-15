@@ -105,8 +105,11 @@ RSpec.describe Beekit do
       end
     end
 
-    describe "#delete_ticket!" do
-      xit "should delete a trashed ticket"
+    describe "#delete_trashed_ticket!" do
+      it "should delete a trashed ticket" do
+        VCR.insert_cassette 'delete_trashed_ticket', :record => :new_episodes
+        expect(client.delete_trashed_ticket!(8383796)["code"]).to eq("204")
+      end
     end
 
     describe "#archive_ticket" do
@@ -135,10 +138,6 @@ RSpec.describe Beekit do
       it "should return a 204 code when the ticket is unarchived successfully" do
         expect(client.unarchive_ticket(8379175)["code"]).to eq("204")
       end
-    end
-
-    describe "#mark_ticket" do
-      xit "it should have a spam mark whem :spam argument is given"
     end
 
     describe "#assign_ticket" do
