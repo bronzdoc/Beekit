@@ -20,10 +20,11 @@ client = Beekit::Client.new("company", "API_TOKEN")
 # Fetching tickets
 
 ```ruby
-# Return 15 tickets of the company in the order of their last activity
+
+# Retrieve the default set of tickets
 client.tickets
 
-# Pass an options hash for specific tickets
+# Or pass an options hash, visit for the complete list of options (https://developers.supportbee.com/api#fetching_tickets)
 client.tickets({label: "important", per_page: 10})
 
 # Get a single ticket
@@ -33,6 +34,7 @@ client.ticket(ticket_id)
 # Creating tickets
 
 ```ruby
+# Create a ticket
 client.create_ticket("ticket content", {
     subject: "Subject",
     requester_name: "Charles xavier",
@@ -45,7 +47,7 @@ client.create_ticket("ticket content", {
 # Deleting tickets
 
 ```ruby
-client.delete_ticket!(ticket_id)
+client.delete_trashed_ticket!(ticket_id)
 ```
 
 # Actions on Tickets
@@ -57,15 +59,18 @@ client.archive_ticket(ticket_id)
 # Un-archives an archived ticket
 client.unarchive_ticket(ticket_id)
 
-# Marks the ticket with a label
-client.mark_ticket(ticket_id, :label)
-
-# Assign a ticket to a user/group
-client.assign_ticket(ticket_id, user_id)
-client.assign_ticket(ticket_id, group_id)
+# Assign a ticket to a User/Group
+client.assign_ticket(ticket_id, user_id: 1)
+client.assign_ticket(ticket_id, group_id: 1)
 
 # Star a ticket
 client.star_ticket(ticket_id)
+
+# Mark a ticket as spam
+client.spam_ticket(ticket_id)
+
+# Remove spam lavel to a ticket
+client.unspam_ticket(ticket_id)
 
 # Un-Star tickets
 client.unstar_ticket(ticket_id)
@@ -81,6 +86,15 @@ client.ticket_replies(ticket_id)
 
 # Reply to a ticket
 client.ticket_reply(ticket_id, "reply content")
+
+# Reply to a ticket with text/html and with an  optional array of attachments
+client.create_ticket_reply(ticket_id, {text: "hello", html: "hello"}, [])
+
+# Get comments of a ticket
+client.ticket_comments(ticket_id)
+
+# Create a comment of a ticket
+client.create_ticket_comment(ticket_id)
 ```
 
 ## Contributing
@@ -91,4 +105,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[bronz
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
