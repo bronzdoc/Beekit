@@ -139,12 +139,12 @@ RSpec.describe Beekit do
 
       it "should assign the ticket to a user correctly" do
         VCR.insert_cassette 'ticket_user_assign', :record => :new_episodes
-        expect(client.assign_ticket(8379182, user_id: 2517806)["assignee"]["user"]["email"]).to eq("person4@example.com")
+        expect(client.assign_ticket(8379182, user_id: 2517806)["assignment"]["assignee"]["user"]["email"]).to eq("person4@example.com")
       end
 
       it "should assign the ticket to a group correctly" do
         VCR.insert_cassette 'ticket_group_assign', :record => :new_episodes
-        expect(client.assign_ticket(8379182, group_id: 5470)["assignee"]["group"]["name"]).to eq("x-men")
+        expect(client.assign_ticket(8379182, group_id: 5470)["assignment"]["assignee"]["group"]["name"]).to eq("x-men")
       end
     end
 
