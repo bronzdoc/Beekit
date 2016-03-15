@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{SupportBee API wrapper}
   spec.description   = %q{SupportBee API wrapper}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/bronzdoc/Beekit"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -27,12 +27,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "httparty"
+  spec.add_dependency "httparty", "~> 0.13"
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "rspec", "~> 0"
+  spec.add_development_dependency "pry", "~> 0"
+  spec.add_development_dependency "vcr", "~> 3.0"
+  spec.add_development_dependency "webmock", "~> 1.24"
 end
