@@ -84,9 +84,6 @@ client.untrash_ticket(ticket_id)
 # Fetching ticket replies
 client.ticket_replies(ticket_id)
 
-# Reply to a ticket
-client.ticket_reply(ticket_id, "reply content")
-
 # Reply to a ticket with text/html and with an  optional array of attachments
 client.create_ticket_reply(ticket_id, {text: "hello", html: "hello"}, [])
 
