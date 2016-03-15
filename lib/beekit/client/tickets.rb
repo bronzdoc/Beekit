@@ -99,8 +99,21 @@ module Beekit
 
     def ticket_replies(ticket_id)
       ticket = HTTParty.get("#{base_uri}/tickets/#{ticket_id}/replies", query: { auth_token: api_token },  headers: headers)
-      require "pry"
-      binding.pry
+      JSON.parse(ticket.response.body)
+    end
+
+    def create_ticket_reply(ticket_id, content = {html: nil, text: nil}, attachment_ids = [])
+      post_data = {
+        "reply":{
+          "content":{
+            "html": content[:html],
+            "text": content[:text]
+          },
+          "attachment_ids": attachment_ids
+        }
+      }
+
+      ticket = HTTParty.post("#{base_uri}/tickets/#{ticket_id}/replies?auth_token=#{api_token}", { body: post_data.to_json, headers: headers } )
       JSON.parse(ticket.response.body)
     end
   end
