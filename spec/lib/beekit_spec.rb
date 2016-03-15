@@ -37,12 +37,8 @@ RSpec.describe Beekit do
         VCR.eject_cassette
       end
 
-      it "should return a hash" do
-        expect(client.tickets.class).to eq(Array)
-      end
-
       it "should return 5 tickets" do
-        expect(client.tickets.count).to eq(5)
+        expect(client.tickets["tickets"].count).to eq(5)
       end
     end
 
@@ -55,18 +51,14 @@ RSpec.describe Beekit do
         VCR.eject_cassette
       end
 
-      it "returns tickets matching the search query" do
-        expect(client.search_tickets("Henry").class).to eq(Array)
-      end
-
       context "when query Henry" do
         it "should return just 1 record" do
-          expect(client.search_tickets("Henry").count).to eq(1)
+          expect(client.search_tickets("Henry")["tickets"].count).to eq(1)
         end
 
         it "should have email equal to beast_boy@gmail.com" do
           tickets = client.search_tickets("Henry")
-          expect(tickets.first["requester"]["email"]).to eq("beast_boy@gmail.com")
+          expect(tickets["tickets"].first["requester"]["email"]).to eq("beast_boy@gmail.com")
         end
       end
     end
@@ -87,7 +79,7 @@ RSpec.describe Beekit do
           requester_email: "panchito@gmail.com"
         }
         new_ticket = client.create_ticket("My computer is not working, please help me!", options)
-        expect(new_ticket["requester"]["email"]).to eq("panchito@gmail.com")
+        expect(new_ticket["ticket"]["requester"]["email"]).to eq("panchito@gmail.com")
       end
     end
 
@@ -101,7 +93,7 @@ RSpec.describe Beekit do
       end
 
       it "should get the ticket specified by the ticket_id argument" do
-        expect(client.ticket(8379175)["requester"]["name"]).to eq("Erik Lehnsherr")
+        expect(client.ticket(8379175)["ticket"]["requester"]["name"]).to eq("Erik Lehnsherr")
       end
     end
 

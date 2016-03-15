@@ -2,11 +2,12 @@ require "httparty"
 
 module Beekit
   module Tickets
+
     def tickets(options = {})
       options["auth_token"] = api_token
 
       tickets = HTTParty.get("#{base_uri}/tickets", query: options,  headers: headers)
-      JSON.parse(tickets.response.body)["tickets"]
+      JSON.parse(tickets.response.body)
     end
 
     def search_tickets(query, options = {})
@@ -14,7 +15,7 @@ module Beekit
       options["query"] = query
 
       search = HTTParty.get("#{base_uri}/tickets/search", query: options,  headers: headers)
-      JSON.parse(search.response.body)["tickets"]
+      JSON.parse(search.response.body)
     end
 
     def create_ticket(content, user_data = {
@@ -37,12 +38,12 @@ module Beekit
       }
 
       ticket = HTTParty.post("#{base_uri}/tickets?auth_token=#{api_token}", { body: post_data.to_json, headers: headers } )
-      JSON.parse(ticket.response.body)["ticket"]
+      JSON.parse(ticket.response.body)
     end
 
     def ticket(ticket_id)
       ticket = HTTParty.get("#{base_uri}/tickets/#{ticket_id}", query: { auth_token: api_token },  headers: headers)
-      JSON.parse(ticket.response.body)["ticket"]
+      JSON.parse(ticket.response.body)
     end
 
     def delete_trashed_ticket!(ticket_id)
