@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://company.supportbee.com/tickets/8379182/comments?auth_token=api_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Tue, 15 Mar 2016 00:53:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"9bc2ba7584d875edfa82f4202484c96f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTYxN2YxNTFkZTA0ODFmZDAzYTcyYTIwZDlmMjc3NmY1BjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsISSIJVXNlcgY7AEZbBmkDLmsmSSIiJDJhJDEwJEJsNlFKajlTVGVFSC5mNVB0UkdWbi4GOwBU--09c1335b0b7029637ae17c4fc01424e95140e634;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - d8a86076dd2fa860e45a20c005096fd8
+      X-Runtime:
+      - '0.093458'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"comments":[{"id":3234284,"created_at":"2016-03-13T01:43:11Z","merged":false,"ticket":{"replies_count":2,"agent_replies_count":2,"comments_count":3},"commenter":{"id":2519598,"email":"system@supportbee.com","name":"SupportBee","agent":false,"active_tickets_count":0,"picture":{"thumb20":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=128"}},"content":{"html":"<strong>Failed
+        to deliver message to beast_boy@gmail.com</strong>\n<br><br>\nWe were not
+        able to deliver your message to the intended recipient beast_boy@gmail.com
+        due to the following reason:\n<br><br><strong>Description:</strong> 5.1.1\n<br><strong>Reason:</strong>
+        550 5.1.1 The email account that you tried to reach does not exist. Please
+        try double-checking the recipient''s email address for typos or unnecessary
+        spaces. Learn more at  https://support.google.com/mail/answer/6596 j189si19207731ioj.153
+        - gsmtp \n<br><br>\n----- Summary of Original Message -----\n<br><br>\n(empty)\n<br><br>\nContact
+        support for more info: support@supportbee.com\n","text":"Failed to deliver
+        message to beast_boy@gmail.com\n\n\n\nWe were not able to deliver your message
+        to the intended recipient beast_boy@gmail.com due to the following reason:\n\n\nDescription:
+        5.1.1\n\nReason: 550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596
+        j189si19207731ioj.153 - gsmtp \n\n\n\n----- Summary of Original Message -----\n\n\n\n(empty)\n\n\n\nContact
+        support for more info: support@supportbee.com\n","truncated":false,"attachments":[]}},{"id":3245970,"created_at":"2016-03-15T00:50:14Z","merged":false,"ticket":{"replies_count":2,"agent_replies_count":2,"comments_count":3},"commenter":{"id":2519598,"email":"system@supportbee.com","name":"SupportBee","agent":false,"active_tickets_count":0,"picture":{"thumb20":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/6bb3cdedcef8ee3c8ebe9471264818dd.png?r=PG&s=128"}},"content":{"html":"<strong>Failed
+        to deliver message to beast_boy@gmail.com</strong>\n<br><br>\nWe were not
+        able to deliver your message to the intended recipient beast_boy@gmail.com
+        due to the following reason:\n<br><br><strong>Description:</strong> 5.1.1\n<br><strong>Reason:</strong>
+        550 5.1.1 The email account that you tried to reach does not exist. Please
+        try double-checking the recipient''s email address for typos or unnecessary
+        spaces. Learn more at  https://support.google.com/mail/answer/6596 hh15si20493205igb.69
+        - gsmtp \n<br><br>\n----- Summary of Original Message -----\n<br><br>\n(empty)\n<br><br>\nContact
+        support for more info: support@supportbee.com\n","text":"Failed to deliver
+        message to beast_boy@gmail.com\n\n\n\nWe were not able to deliver your message
+        to the intended recipient beast_boy@gmail.com due to the following reason:\n\n\nDescription:
+        5.1.1\n\nReason: 550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596
+        hh15si20493205igb.69 - gsmtp \n\n\n\n----- Summary of Original Message -----\n\n\n\n(empty)\n\n\n\nContact
+        support for more info: support@supportbee.com\n","truncated":false,"attachments":[]}},{"id":3245971,"created_at":"2016-03-15T00:50:27Z","merged":false,"ticket":{"replies_count":2,"agent_replies_count":2,"comments_count":3},"commenter":{"id":2517806,"email":"lsagastume1990@gmail.com","name":"luis
+        sagastume","agent":true,"active_tickets_count":2,"picture":{"thumb20":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=128"}},"content":{"html":"this
+        dude is the x-men beast","text":"this dude is the x-men beast","truncated":false,"attachments":[]}}]}'
+    http_version:
+  recorded_at: Tue, 15 Mar 2016 00:53:20 GMT
+recorded_with: VCR 3.0.1

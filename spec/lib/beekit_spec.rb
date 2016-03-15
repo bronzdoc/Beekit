@@ -230,6 +230,14 @@ RSpec.describe Beekit do
           expect(res["reply"]["content"]["text"]).to eq("Hey what's up! what's your problem?")
         end
       end
+
+      describe "#ticket_comments" do
+        it "should get the comments of the specified ticket" do
+          VCR.insert_cassette 'ticket_comments', :record => :new_episodes
+          res = client.ticket_comments(8379182)
+          expect(res["comments"].count).to eq(3)
+        end
+      end
     end
   end
 end
