@@ -238,6 +238,14 @@ RSpec.describe Beekit do
           expect(res["comments"].count).to eq(3)
         end
       end
+
+      describe "#create_ticket_comment" do
+        it "should create a comment on the specified ticket" do
+          VCR.insert_cassette 'create_ticket_comment', :record => :new_episodes
+          res = client.create_ticket_comment(8383813, text: "Hey what's up! what's your problem?")
+          expect(res["comment"]["ticket"]["comments_count"]).to eq(1)
+        end
+      end
     end
   end
 end

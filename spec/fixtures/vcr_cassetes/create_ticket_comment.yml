@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://company.supportbee.com/tickets/8383813/comments?auth_token=api_token
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"content":{"html":null,"text":"Hey what''s up! what''s
+        your problem?"},"attachment_ids":[]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.2.0
+      Date:
+      - Tue, 15 Mar 2016 01:19:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"5693597647572fb71da666a3413e2736"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - secure_code_session=BAh7B0kiGXdhcmRlbi51c2VyLnVzZXIua2V5BjoGRVRbCEkiCVVzZXIGOwBGWwZpAy5rJkkiIiQyYSQxMCRCbDZRSmo5U1RlRUguZjVQdFJHVm4uBjsAVEkiD3Nlc3Npb25faWQGOwBGSSIlNzU3NWRiYzVjZTFmYTRlM2VhMmU0MGUyMGQzZDE3ZDMGOwBU--d23c4213d3391d5de0cf4f11850d5aab98f6b190;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 3297a0fe95500cc9098b52741cf1356e
+      X-Runtime:
+      - '0.338415'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"id":3246062,"created_at":"2016-03-15T01:19:35Z","merged":false,"ticket":{"replies_count":0,"agent_replies_count":0,"comments_count":1},"commenter":{"id":2517806,"email":"lsagastume1990@gmail.com","name":"luis
+        sagastume","agent":true,"active_tickets_count":2,"picture":{"thumb20":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=20","thumb24":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=24","thumb32":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=32","thumb48":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=48","thumb64":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=64","thumb128":"https://secure.gravatar.com/avatar/4621a3bae4c4badfc945a8dc20900b01.png?r=PG&s=128"}},"content":{"html":"Hey
+        what''s up! what''s your problem?","text":"Hey what''s up! what''s your problem?","truncated":false,"attachments":[]}}}'
+    http_version:
+  recorded_at: Tue, 15 Mar 2016 01:19:35 GMT
+recorded_with: VCR 3.0.1

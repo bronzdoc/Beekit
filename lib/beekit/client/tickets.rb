@@ -121,5 +121,20 @@ module Beekit
       ticket = HTTParty.get("#{base_uri}/tickets/#{ticket_id}/comments", query: { auth_token: api_token },  headers: headers)
       JSON.parse(ticket.response.body)
     end
+
+    def create_ticket_comment(ticket_id, content = {html: "blank", text: "blank"}, attachment_ids = [])
+      post_data = {
+        "comment":{
+          "content":{
+            "html": content[:html],
+            "text": content[:text]
+          },
+          "attachment_ids": attachment_ids
+        }
+      }
+
+      ticket = HTTParty.post("#{base_uri}/tickets/#{ticket_id}/comments?auth_token=#{api_token}", { body: post_data.to_json, headers: headers } )
+      JSON.parse(ticket.response.body)
+    end
   end
 end
